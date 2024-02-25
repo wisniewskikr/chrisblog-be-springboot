@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ArticleController {
 
-    @GetMapping
-    public List<String> findArticlesByCategory() {
+    @GetMapping("api/v1/article")
+    public List<String> findArticlesByHomeCategory() {
         List<String> result = new ArrayList<>();
         result.add("Test");
         return result;
