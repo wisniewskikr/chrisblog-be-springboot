@@ -36,7 +36,7 @@ public class ArticleService {
     }
 
 
-    public ArticleResponse findArticlesByHomeCategory(ArticleRequest request) {
+    public ArticleResponse findArticles(ArticleRequest request) {
         
         Page<ArticleEntity> page = null;
         

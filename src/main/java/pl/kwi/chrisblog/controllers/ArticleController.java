@@ -24,8 +24,8 @@ public class ArticleController {
     }
 
     @PostMapping("api/v1/article")
-    public ArticleResponse findArticlesByHomeCategory(@RequestBody ArticleRequest request) {
-        return articleService.findArticlesByHomeCategory(request);
+    public ArticleResponse findArticles(@RequestBody ArticleRequest request) {
+        return articleService.findArticles(request);
     }
     
 }
