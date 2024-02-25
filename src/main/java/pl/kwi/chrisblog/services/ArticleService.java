@@ -2,6 +2,7 @@ package pl.kwi.chrisblog.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +54,10 @@ public class ArticleService {
 		return createArticleResponseWithPagination(request, page);
 
     }
+
+	public ArticleEntity findArticleById(Long id) {
+		return articleRepository.findById(id).orElseThrow(() -> new RuntimeException("No article with id: " + id));
+	}
 
     private Page<ArticleEntity> getTagPage(ArticleRequest request) {
 		
