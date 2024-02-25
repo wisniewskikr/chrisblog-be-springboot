@@ -72,6 +72,19 @@ insert into TAG (id, name) values (68,'Gambia');
 insert into TAG (id, name) values (69,'Bosnia and Herzegovina');
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+2,
+'The article presents TED lecture about avoiding world ignorance. The lecture presented by Hans and Ola Rosling.',
+'TED - How not to be ignorant about the world; Hans and Ola Rosling', 
+'How much do you know about the world? Hans Rosling, with his famous charts of global population, health and income data (and an extra-extra-long pointer), demonstrates that you have a high statistical chance of being quite wrong about what you think you know. Play along with his audience quiz — then, from Hans’ son Ola, learn 4 ways to quickly get less ignorant.', 
+'2021-03-07', 
+'Chris', 
+2,
+'LINK_YOUTUBE',
+'https://embed.ted.com/talks/hans_and_ola_rosling_how_not_to_be_ignorant_about_the_world');
+insert into ARTICLE_TAG (tag_id, article_id) values (3,2);
+insert into ARTICLE_TAG (tag_id, article_id) values (4,2);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
