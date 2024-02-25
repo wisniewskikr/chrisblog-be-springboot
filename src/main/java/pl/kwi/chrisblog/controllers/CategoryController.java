@@ -6,24 +6,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import pl.kwi.chrisblog.dtos.CategoryResponse;
-import pl.kwi.chrisblog.services.ArticleService;
+import pl.kwi.chrisblog.services.CategoryService;
 
 @RestController
 @CrossOrigin("http://localhost:4200")
 public class CategoryController {
 
 
-    private ArticleService articleService;
+    private CategoryService categoryService;
 
     
     @Autowired
-    public CategoryController(ArticleService articleService) {
-        this.articleService = articleService;
+    public CategoryController(CategoryService categoryService) {
+        this.categoryService = categoryService;
     }
 
     @GetMapping("api/v1/category")
     public CategoryResponse findCategories() {
-        return null;
+        return categoryService.findCategories();
     }
     
 }
