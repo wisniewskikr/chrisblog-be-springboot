@@ -30,12 +30,6 @@
 		    <artifactId>spring-webmvc</artifactId>
 		</dependency>
 		
-		<!-- Thymeleaf dependencies -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		
 		<!-- Remove Tomcat embedded dependencies -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
