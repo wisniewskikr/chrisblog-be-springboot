@@ -1,5 +1,8 @@
 package pl.kwi.chrisblog.services;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -47,7 +50,7 @@ public class ArticleService {
 			page = getOtherCategoriesPage(request);
 		}
         
-        return null;
+        return createArticleResponseWithPagination(request, page);
 
     }
 
@@ -85,6 +88,25 @@ public class ArticleService {
 		
 	}
 
+    protected ArticleResponse createArticleResponseWithPagination(ArticleRequest request, Page<ArticleEntity> page) {
+		
+		List<Integer> pages = new ArrayList<>();
+        boolean disablePrevious;
+	    boolean disableNext;
+		
+        int first = getFirst(request.page(), page.getTotalPages());
+		int last = getLast(request.page(), page.getTotalPages());
+		for (int i = first; i <= last; i++) {
+			pages.add(i);
+		}
+
+        disablePrevious = (request.page() == 1);
+        disableNext = (request.page() == page.getTotalPages() || pages.isEmpty());
+
+        return new ArticleResponse(pages, disablePrevious, disableNext, page.getContent());        		
+		
+	}
+
     // ***** HELP METHODS ***** //
 
     private boolean isTag(ArticleRequest request) {		
@@ -119,6 +141,62 @@ public class ArticleService {
 		default:
 			return Sort.by(Sort.Direction.DESC, "title");
 		}
+		
+	}
+
+    private int getFirst(int currentPage, int totalPages) {
+		
+		int result = 1;
+		
+		if (totalPages <= paginationItemsOnPage) {
+			return result;
+		}
+		
+		if ((currentPage - 1 ) > 0) {
+			result = currentPage - 1;
+		}
+		
+		if ((currentPage - 2) > 0) {
+			result = currentPage - 2;
+		}
+		
+		if ((currentPage - 3) > 0 && (currentPage + 2) > totalPages) {
+			result = currentPage - 3;
+		}
+		
+		if ((currentPage - 4) > 0 && (currentPage + 1) > totalPages) {
+			result = currentPage - 4;
+		}
+		
+		return result;
+		
+	}
+	
+	private int getLast(int currentPage, int totalPages) {
+		
+		int result = totalPages;
+		
+		if (totalPages <= paginationItemsOnPage) {
+			return result;
+		}
+		
+		if ((currentPage + 1) <= totalPages) {
+			result = currentPage + 1;
+		}
+		
+		if ((currentPage + 2) <= totalPages) {
+			result = currentPage + 2;
+		}
+		
+		if ((currentPage + 3 ) < totalPages  && (currentPage - 2) <= 0) {
+			result = currentPage + 3;
+		}
+		
+		if ((currentPage + 4) < totalPages  && (currentPage - 1) <= 0) {
+			result = currentPage + 4;
+		}		
+		
+		return result;
 		
 	}
     

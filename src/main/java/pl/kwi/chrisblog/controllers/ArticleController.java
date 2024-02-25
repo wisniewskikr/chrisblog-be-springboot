@@ -14,7 +14,7 @@ import pl.kwi.chrisblog.services.ArticleService;
 @CrossOrigin("http://localhost:4200")
 public class ArticleController {
 
-    
+
     private ArticleService articleService;
 
     
@@ -25,11 +25,7 @@ public class ArticleController {
 
     @PostMapping("api/v1/article")
     public ArticleResponse findArticlesByHomeCategory(@RequestBody ArticleRequest request) {
-
-        System.out.println("request: " + request.toString());
-
-        return new ArticleResponse("Ok");
-
+        return articleService.findArticlesByHomeCategory(request);
     }
     
 }
