@@ -38,27 +38,27 @@ public class ArticleService {
         Page<ArticleEntity> page = null;
         
         if (isTag(request)) {
-            page = handleTag(request);
+            page = getTagPage(request);
         } else if(isSearch(request)) {
-			page = handleSearch(request);
+			page = getSearchPage(request);
 		} else if(isHomeCategory(request)) {
-			page = handleHomeCategory(request);
+			page = getHomeCategoryPage(request);
 		} else {
-			page = handleOtherCategories(request);
+			page = getOtherCategoriesPage(request);
 		}
         
         return null;
 
     }
 
-    private Page<ArticleEntity> handleTag(ArticleRequest request) {
+    private Page<ArticleEntity> getTagPage(ArticleRequest request) {
 		
 		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
 		return articleRepository.findByTagIdAsPage(request.tagId(), pageable);
 		
 	}
 
-    private Page<ArticleEntity> handleSearch(ArticleRequest request) {
+    private Page<ArticleEntity> getSearchPage(ArticleRequest request) {
 		
 		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
 		Page<ArticleEntity> page = null;
@@ -71,19 +71,17 @@ public class ArticleService {
 		
 	}
 
-    private Page<ArticleEntity> handleHomeCategory(ArticleRequest request) {
+    private Page<ArticleEntity> getHomeCategoryPage(ArticleRequest request) {
 		
 		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
-		Page<ArticleEntity> page = articleRepository.findAll(pageable);
-		return page;
+		return articleRepository.findAll(pageable);
 		
 	}
 
-    private Page<ArticleEntity> handleOtherCategories(ArticleRequest request) {
+    private Page<ArticleEntity> getOtherCategoriesPage(ArticleRequest request) {
 		
 		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
-		Page<ArticleEntity> page = articleRepository.findByCategoryIdAsPage(request.categoryId(), pageable);
-		return page;
+		return articleRepository.findByCategoryIdAsPage(request.categoryId(), pageable);
 		
 	}
 
