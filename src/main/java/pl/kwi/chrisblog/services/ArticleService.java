@@ -49,21 +49,21 @@ public class ArticleService {
 		} else {
 			page = getOtherCategoriesPage(request);
 		}
-        
-        return createArticleResponseWithPagination(request, page);
+
+		return createArticleResponseWithPagination(request, page);
 
     }
 
     private Page<ArticleEntity> getTagPage(ArticleRequest request) {
 		
-		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
+		Pageable pageable = PageRequest.of(request.page() - 1, articlesOnPage, handleSorting(request.sorting()));
 		return articleRepository.findByTagIdAsPage(request.tagId(), pageable);
 		
 	}
 
     private Page<ArticleEntity> getSearchPage(ArticleRequest request) {
 		
-		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
+		Pageable pageable = PageRequest.of(request.page() - 1, articlesOnPage, handleSorting(request.sorting()));
 		Page<ArticleEntity> page = null;
 		if (request.categoryId() == 0) {
 			page = articleRepository.findBySearchTextAsPage(request.searchText().toLowerCase(), pageable);
@@ -76,14 +76,14 @@ public class ArticleService {
 
     private Page<ArticleEntity> getHomeCategoryPage(ArticleRequest request) {
 		
-		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
+		Pageable pageable = PageRequest.of(request.page() - 1, articlesOnPage, handleSorting(request.sorting()));
 		return articleRepository.findAll(pageable);
 		
 	}
 
     private Page<ArticleEntity> getOtherCategoriesPage(ArticleRequest request) {
 		
-		Pageable pageable = PageRequest.of(request.page(), articlesOnPage, handleSorting(request.sorting()));
+		Pageable pageable = PageRequest.of(request.page() - 1, articlesOnPage, handleSorting(request.sorting()));
 		return articleRepository.findByCategoryIdAsPage(request.categoryId(), pageable);
 		
 	}
