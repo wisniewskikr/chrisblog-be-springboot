@@ -72,6 +72,19 @@ insert into TAG (id, name) values (68,'Gambia');
 insert into TAG (id, name) values (69,'Bosnia and Herzegovina');
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+1,
+'The article with Hello World example of Spring Boot and Thymeleaf',
+'Hello World - Spring Boot MVC and Thymeleaf', 
+'This article will show you how to create first simple Java application. This application displays text <b>Hello World</b> in your browser. <b>The Front-End layer</b> is handled by <b>Thymeleaf</b> technology with help of <b>Bootstrap</b> CSS framework. <b>The Back-End layer</b> is handled by <b>Spring Boot MVC (Model-View Controller)</b> technology. There is no <b>Database layer</b> in this project.', 
+'2021-01-04', 
+'Chris',  
+1,
+'LINK_GITHUB',
+'https://github.com/wisniewskikr/chrisblog-it-java-springboot/tree/main/arichitectures/ui/html/thymeleaf/springboot-helloworld-thymeleaf-simple');
+insert into ARTICLE_TAG (tag_id, article_id) values (1,1);
+insert into ARTICLE_TAG (tag_id, article_id) values (2,1);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 2,
 'The article presents TED lecture about avoiding world ignorance. The lecture presented by Hans and Ola Rosling.',
 'TED - How not to be ignorant about the world; Hans and Ola Rosling', 
