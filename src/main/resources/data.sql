@@ -136,6 +136,19 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (7,5);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+6,
+'The article presents TED lecture about making decisions like computer. Presenter is Tom Griffiths.',
+'TED - 3 ways to make better decisions - by thinking like a computer; Tom Griffiths', 
+'If you ever struggle to make decisions, here`s a talk for you. Cognitive scientist Tom Griffiths shows how we can apply the logic of computers to untangle tricky human problems, sharing three practical strategies for making better decisions - on everything from finding a home to choosing which restaurant to go to tonight.', 
+'2021-04-06', 
+'Chris', 
+2,
+'LINK_YOUTUBE',
+'https://embed.ted.com/talks/tom_griffiths_3_ways_to_make_better_decisions_by_thinking_like_a_computer');
+insert into ARTICLE_TAG (tag_id, article_id) values (3,6);
+insert into ARTICLE_TAG (tag_id, article_id) values (4,6);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
