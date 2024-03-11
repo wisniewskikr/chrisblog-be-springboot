@@ -198,6 +198,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (3,10);
 insert into ARTICLE_TAG (tag_id, article_id) values (4,10);
 
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, content) values (
+11,
+'The article presents book "Drive" by Daniel H. Pink.',
+'Drive; Daniel H. Pink', 
+'Most people believe that the best way to motivate is with rewards like money—the carrot-and-stick approach. That’s a mistake, says Daniel H. Pink (author of To Sell Is Human: The Surprising Truth About Motivating Others). In this provocative and persuasive new book, he asserts that the secret to high performance and satisfaction-at work, at school, and at home—is the deeply human need to direct our own lives, to learn and create new things, and to do better by ourselves and our world.', 
+'2021-04-26', 
+'Chris', 
+3,
+'CONTENT',
+'There are three elements of Motivation 3.0: <b>Autonomy</b>, <b>Mastery</b> and <b>Goal</b>.');
+insert into ARTICLE_TAG (tag_id, article_id) values (4,11);
+
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
