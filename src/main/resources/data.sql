@@ -97,6 +97,20 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (3,2);
 insert into ARTICLE_TAG (tag_id, article_id) values (4,2);
 
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, content) values (
+3,
+'The article presents book "How to Win Friends and Influence People" by Dale Carnegie.',
+'How to Win Friends and Influence People; Dale Carnegie', 
+'You can go after the job you want - and get it. You can take the job you have - and improve it. You can take any situation - and make it work for you. Dale Carnegie`s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives. One of the most groundbreaking and timeless bestsellers of all time, "How to Win Friends & Influence People" will teach you: -Six ways to make people like you -Twelve ways to win people to your way of thinking -Nine ways to change people without arousing resentment. And much more. Achieve your maximum potential.', 
+'2021-03-15', 
+'Chris', 
+3,
+'CONTENT',
+'Dale Carnegie writes about <b>Fundamental Techniques in Handling People</b>, <b>Six Ways to Make People Like You</b>, <b>Twelve Ways to Win People to Your Way of Thinking</b> and <b>Be a Leader: How to Change People Without Giving Offense or Arousing Resentment</b>.
+
+');
+insert into ARTICLE_TAG (tag_id, article_id) values (4,3);
+
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
