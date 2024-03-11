@@ -112,6 +112,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (4,3);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+4,
+'The article presents a relation from a trip to Ning Binh in Vietnam.',
+'Ninh Binh, Vietnam, 12.2020', 
+'The article presents a relation from a trip to Ning Binh in Vietnam in December 2020.', 
+'2021-03-22', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/USQztcfzG4kkE2vg7');
+insert into ARTICLE_TAG (tag_id, article_id) values (6,4);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
