@@ -186,6 +186,19 @@ insert into ARTICLE_TAG (tag_id, article_id) values (1,9);
 insert into ARTICLE_TAG (tag_id, article_id) values (2,9);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+10,
+'The article presents TED lecture about connection between religions and babies. The lecture presented by Hans Rosling.',
+'TED - Religions and babies; Hans Rosling', 
+'Hans Rosling had a question: Do some religions have a higher birth rate than others - and how does this affect global population growth? Speaking at the TEDxSummit in Doha, Qatar, he graphs data over time and across religions. With his trademark humor and sharp insight, Hans reaches a surprising conclusion on world fertility rates.', 
+'2021-04-22', 
+'Chris', 
+2,
+'LINK_YOUTUBE',
+'https://embed.ted.com/talks/hans_rosling_religions_and_babies');
+insert into ARTICLE_TAG (tag_id, article_id) values (3,10);
+insert into ARTICLE_TAG (tag_id, article_id) values (4,10);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
