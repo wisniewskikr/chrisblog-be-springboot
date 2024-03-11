@@ -148,6 +148,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (3,6);
 insert into ARTICLE_TAG (tag_id, article_id) values (4,6);
 
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, content) values (
+7,
+'The article presents book "We are the weather" by Jonathan Safran Foer.',
+'We are the weather; Jonathan Safran Foer', 
+'In We Are the Weather, Jonathan Safran Foer explores the central global dilemma of our time in a surprising, deeply personal, and urgent new way. Some people reject the fact, overwhelmingly supported by scientists, that our planet is warming because of human activity.', 
+'2021-04-08', 
+'Chris', 
+3,
+'CONTENT',
+'This book says about pollution problem, strategies to solve it and moral dilemas');
+insert into ARTICLE_TAG (tag_id, article_id) values (3,7);
+
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
