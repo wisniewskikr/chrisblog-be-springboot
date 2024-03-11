@@ -173,6 +173,19 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (6,8);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+9,
+'The article with Hello World example of Java application with form using technologies Spring Boot and Thymeleaf',
+'Hello World - Spring Boot MVC, Thymeleaf and form', 
+'This article will show you how to create simple Hello World Java application with form using technologies Spring Boot and Thymeleaf.', 
+'2021-04-19', 
+'Chris', 
+1,
+'LINK_GITHUB',
+'https://github.com/wisniewskikr/chrisblog-it-java-springboot/tree/main/arichitectures/ui/html/thymeleaf/springboot-helloworld-thymeleaf-forms-simple');
+insert into ARTICLE_TAG (tag_id, article_id) values (1,9);
+insert into ARTICLE_TAG (tag_id, article_id) values (2,9);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
