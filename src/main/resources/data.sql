@@ -124,6 +124,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (6,4);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+5,
+'The article with Hello World example of Spring Boot API',
+'Hello World - Spring Boot API', 
+'This article will show you how to create first simple Java application in Spring Boot REST API technology. It contains two examples: one "Hello World" with GET method and one "Hello World" with POST method.', 
+'2021-03-31', 
+'Chris', 
+1,
+'LINK_GITHUB',
+'https://github.com/wisniewskikr/chrisblog-it-java-springboot/tree/main/arichitectures/api/rest/springboot-helloworld-port-uuid-single');
+insert into ARTICLE_TAG (tag_id, article_id) values (7,5);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
