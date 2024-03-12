@@ -235,6 +235,19 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (7,13);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+14,
+'The article presents TED lecture about errors in human decision. The lecture presented by Dan Gilbert.',
+'TED - Why we make bad decisions; Dan Gilbert', 
+'Dan Gilbert presents research and data from his exploration of happiness -- sharing some surprising tests and experiments that you can also try on yourself. Watch through to the end for a sparkling Q&A with some familiar TED faces.', 
+'2021-05-04', 
+'Chris', 
+2,
+'LINK_YOUTUBE',
+'https://embed.ted.com/talks/dan_gilbert_why_we_make_bad_decisions');
+insert into ARTICLE_TAG (tag_id, article_id) values (3,14);
+insert into ARTICLE_TAG (tag_id, article_id) values (4,14);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
