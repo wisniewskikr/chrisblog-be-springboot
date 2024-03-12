@@ -223,6 +223,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (6,12);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+13,
+'The article with Hello World example of Spring Boot API secured by BASIC authentication',
+'Hello World - Spring Boot API with BASIC authentication', 
+'This article will show you how to create simple Java application in Spring Boot REST API technology secured by BASIC authentication. It contains two examples: one "Hello World" with GET method and one "Hello World" with POST method. These two examples are secured by BASIC authentication.', 
+'2021-05-03', 
+'Chris', 
+1,
+'LINK_GITHUB',
+'https://github.com/wisniewskikr/chrisblog-it-java-springboot/tree/main/others/security/api/api-custom/api-springsec-onereq-source-header-basic-authn-inmemory-authr-config');
+insert into ARTICLE_TAG (tag_id, article_id) values (7,13);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
 'Da Nang, Vietnam, 10.2020', 
