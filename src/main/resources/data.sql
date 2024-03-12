@@ -247,6 +247,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (3,14);
 insert into ARTICLE_TAG (tag_id, article_id) values (4,14);
 
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, content) values (
+15,
+'The article presents book "Homo Biologicus" by Pier Vincenzo Piazza.',
+'Homo Biologicus; Pier Vincenzo Piazza', 
+'The neurobiologist Pier Vincenzo Piazza believes that modern biology can explain not only how the processes in the human body take place but also why something is happening in our environment.', 
+'2021-05-10', 
+'Chris', 
+3,
+'CONTENT',
+'How modern biology explains human nature.');
+insert into ARTICLE_TAG (tag_id, article_id) values (4,15);
+
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 16,
 'The article presents a relation from a trip to Da Nang in Vietnam.',
