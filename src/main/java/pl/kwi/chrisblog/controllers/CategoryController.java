@@ -9,7 +9,7 @@ import pl.kwi.chrisblog.dtos.CategoryResponse;
 import pl.kwi.chrisblog.services.CategoryService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("${fe.url}")
 public class CategoryController {
 
 

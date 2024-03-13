@@ -14,7 +14,7 @@ import pl.kwi.chrisblog.dtos.ArticleResponse;
 import pl.kwi.chrisblog.services.ArticleService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("${fe.url}")
 public class ArticleController {
 
 

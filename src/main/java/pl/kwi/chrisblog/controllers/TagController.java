@@ -11,7 +11,7 @@ import pl.kwi.chrisblog.dtos.TagResponse;
 import pl.kwi.chrisblog.services.TagService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("${fe.url}")
 public class TagController {
 
 
