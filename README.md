@@ -10,7 +10,7 @@ Usage steps:
 1. (Optional) Check docker image with `docker images`
 1. In a command line tool start Docker container with `docker run -d -p 8080:8080 --name chrisblog-be-springboot-container chrisblog-be-springboot-image`
 1. (Optional) Check docker container with `docker ps -a`
-1. In a browser visit `http://localhost:8080/api/v1/article/1`
+1. In a browser visit `http://localhost:8080/swagger-ui/index.html`
 1. (Optional) Check application logs
      * In a command line tool display applicaction logs with `docker logs chrisblog-be-springboot-container`
 1. Clean up environment 
