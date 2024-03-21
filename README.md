@@ -1,3 +1,9 @@
+USAGE LOCAL
+-----------
+
+Command to run application on dev/local environment:
+* mvn spring-boot:run -D"spring-boot.run.profiles"="dev"
+
 USAGE DOCKER
 ------------
 
