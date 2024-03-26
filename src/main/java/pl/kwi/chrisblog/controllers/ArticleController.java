@@ -4,8 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import pl.kwi.chrisblog.db.entities.ArticleEntity;
@@ -26,9 +25,17 @@ public class ArticleController {
         this.articleService = articleService;
     }
 
-    @PostMapping("api/v1/article")
-    public ArticleResponse findArticles(@RequestBody ArticleRequest request) {
-        return articleService.findArticles(request);
+    @GetMapping("api/v1/article")
+    public ArticleResponse findArticles(
+        @RequestParam("categoryId") Long categoryId,
+        @RequestParam(value = "tagId", required = false) Long tagId,
+        @RequestParam("page") int page,
+        @RequestParam("sorting") String sorting,
+        @RequestParam(value = "searchText", required = false) String searchText 
+        ) {
+
+        return articleService.findArticles(new ArticleRequest(categoryId, tagId, page, sorting, searchText));
+
     }
 
     @GetMapping("api/v1/article/{id}")
