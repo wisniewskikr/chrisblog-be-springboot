@@ -70,6 +70,8 @@ insert into TAG (id, name) values (66,'Moldova');
 insert into TAG (id, name) values (67,'Hungary');
 insert into TAG (id, name) values (68,'Gambia');
 insert into TAG (id, name) values (69,'Bosnia and Herzegovina');
+insert into TAG (id, name) values (70, 'Angular');
+insert into TAG (id, name) values (71, 'TypeScript');
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 1,
@@ -3045,3 +3047,17 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/cZyqDqfSwfNtLPig6');
 insert into ARTICLE_TAG (tag_id, article_id) values (44,243);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+244,
+'The article presents an introduction to Angular and TypeScript',
+'Getting Started with Angular and TypeScript', 
+'This article introduces the basics of Angular and TypeScript, explaining their key concepts and how they work together to build modern web applications.', 
+'2025-03-11', 
+'Merzki', 
+1,
+'LINK_GITHUB',
+'https://github.com/wisniewskikr/chrisblog-it-ts-angular/tree/main/architectures/gui/html/ts-angular-demo-single');
+
+insert into ARTICLE_TAG (tag_id, article_id) values (70, 244);
+insert into ARTICLE_TAG (tag_id, article_id) values (71, 244);
