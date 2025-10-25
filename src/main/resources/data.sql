@@ -3216,3 +3216,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'https://github.com/wisniewskikr/chrisblog-it-ts-angular/tree/main/architectures/gui/html/ts-angular-demo-single');
 insert into ARTICLE_TAG (tag_id, article_id) values (70, 257);
 insert into ARTICLE_TAG (tag_id, article_id) values (71, 257);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+258,
+'The article presents a relation from a trip to Bitola in North Macedonia.',
+'Bitola, North Macedonia, 11.2022', 
+'The article presents a relation from a trip to Bitola in North Macedonia in November 2022.', 
+'2025-10-25', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/kKbrQ1ZKAFPVcWpX7');
+insert into ARTICLE_TAG (tag_id, article_id) values (42,258);
