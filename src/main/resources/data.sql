@@ -3169,6 +3169,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (42,253);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+254,
+'The article presents a relation from a trip to Canyon Matka in North Macedonia.',
+'Canyon Matka, North Macedonia, 11.2022', 
+'The article presents a relation from a trip to Canyon Matka in North Macedonia in November 2022.', 
+'2025-10-25', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/APAeFXJFFq879UNg7');
+insert into ARTICLE_TAG (tag_id, article_id) values (42,254);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 257,
 'The article presents an introduction to Angular and TypeScript',
 'Getting Started with Angular and TypeScript', 
