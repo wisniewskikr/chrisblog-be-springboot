@@ -3073,6 +3073,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 insert into ARTICLE_TAG (tag_id, article_id) values (44,245);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+246,
+'The article presents a relation from a trip to Lovcen Mountains in Montenegro.',
+'Lovcen Mountains, Montenegro, 10.2022', 
+'The article presents a relation from a trip to Lovcen Mountains in Montenegro in October 2022.', 
+'2025-10-25', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/YMtw7q4hAL1F9m499');
+insert into ARTICLE_TAG (tag_id, article_id) values (44,246);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 257,
 'The article presents an introduction to Angular and TypeScript',
 'Getting Started with Angular and TypeScript', 
