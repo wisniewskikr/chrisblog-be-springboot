@@ -3111,7 +3111,7 @@ insert into ARTICLE_TAG (tag_id, article_id) values (44,248);
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 249,
 'The article presents a relation from a trip to Tivat in Montenegro.',
-'Budva, Tivat, 10.2022', 
+'Tivat, Mongenegro, 10.2022', 
 'The article presents a relation from a trip to Tivat in Montenegro in October 2022.', 
 '2025-10-25', 
 'Chris', 
@@ -3119,6 +3119,18 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/nrsh7Cz8wJmu94fj9');
 insert into ARTICLE_TAG (tag_id, article_id) values (44,249);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+250,
+'The article presents a relation from a trip to Prisztina in Kosovo.',
+'Prisztina, Kosovo, 10.2022', 
+'The article presents a relation from a trip to Prisztina in Kosovo in October 2022.', 
+'2025-10-25', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/YEG7bjF3bZbBQmVu7');
+insert into ARTICLE_TAG (tag_id, article_id) values (43,250);
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 257,
