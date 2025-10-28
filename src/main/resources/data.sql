@@ -3276,3 +3276,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/k6KVM1paSfH2eavy6');
 insert into ARTICLE_TAG (tag_id, article_id) values (45,262);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+263,
+'The article presents a relation from a trip to Butrint in Albania.',
+'Butrint, Albania, 11.2022', 
+'The article presents a relation from a trip to Butrint in Albania in November 2022.', 
+'2025-10-28', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/N2rGMBDxqKDcb4SU9');
+insert into ARTICLE_TAG (tag_id, article_id) values (45,263);
