@@ -72,6 +72,7 @@ insert into TAG (id, name) values (68,'Gambia');
 insert into TAG (id, name) values (69,'Bosnia and Herzegovina');
 insert into TAG (id, name) values (70, 'Angular');
 insert into TAG (id, name) values (71, 'TypeScript');
+insert into TAG (id, name) values (72, 'Chech Republic');
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 1,
@@ -3348,3 +3349,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/v5PKLxnNsJvbjFj7A');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,268);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+269,
+'The article presents a relation from a trip to Janskie Laznie in Chech Republic.',
+'Janskie Laznie, Czech Republic, 01.2024', 
+'The article presents a relation from a trip to Janskie Laznie in Czech Republic in January 2024.', 
+'2025-11-08', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/1sGsPK6jdaXuVG4JA');
+insert into ARTICLE_TAG (tag_id, article_id) values (72,269);
