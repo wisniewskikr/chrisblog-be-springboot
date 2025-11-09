@@ -3373,3 +3373,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/3fRTW2aZMZ1HKQ9V6');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,270);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+271,
+'The article presents a relation from a trip to Ustronie Morskie & Kolobrzeg in Poland.',
+'Ustronie Morskie & Kolobrzeg, Poland, 03.2024', 
+'The article presents a relation from a trip to Ustronie Morskie & Kolobrzeg in Poland in March 2024.', 
+'2025-11-09', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/xCEBdmn5FUHadtte6');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,271);
