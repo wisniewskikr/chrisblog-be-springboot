@@ -3421,3 +3421,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/FjQMAnUhVLfj2idQ7');
 insert into ARTICLE_TAG (tag_id, article_id) values (61,274);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+275,
+'The article presents a relation from a trip to Slupsk in Poland.',
+'Slupsk, Poland, 07.2024', 
+'The article presents a relation from a trip to Slupsk in Poland in July 2024.', 
+'2025-11-09', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/aFZdZczwH7Qtos7L7');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,275);
