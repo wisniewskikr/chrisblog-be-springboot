@@ -3445,3 +3445,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/AADCNLCXCvjRWnYj6');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,276);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+277,
+'The article presents a relation from a trip to Balatonfured in Hungary.',
+'Balatonfured, Hungary, 07.2024', 
+'The article presents a relation from a trip to Balatonfured in Hungary in July 2024.', 
+'2025-11-13', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/zuaFonujQU25Lt6g6');
+insert into ARTICLE_TAG (tag_id, article_id) values (67,277);
