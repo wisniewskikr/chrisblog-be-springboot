@@ -3614,3 +3614,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/NehDMVT92jccUYDA8');
 insert into ARTICLE_TAG (tag_id, article_id) values (41,290);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+291,
+'The article presents a relation from a trip to Naples in Italy.',
+'Naples, Italy, 12.2025', 
+'The article presents a relation from a trip to Naples in Italy in December 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/sBqnKWKwDQ4kUm2r5');
+insert into ARTICLE_TAG (tag_id, article_id) values (41,291);
