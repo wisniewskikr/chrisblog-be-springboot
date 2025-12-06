@@ -73,6 +73,7 @@ insert into TAG (id, name) values (69,'Bosnia and Herzegovina');
 insert into TAG (id, name) values (70, 'Angular');
 insert into TAG (id, name) values (71, 'TypeScript');
 insert into TAG (id, name) values (72, 'Chech Republic');
+insert into TAG (id, name) values (73, 'Vatican');
 
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 1,
@@ -3541,3 +3542,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/qMGjF6jUq9aYq8oS6');
 insert into ARTICLE_TAG (tag_id, article_id) values (41,284);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+285,
+'The article presents a relation from a trip to Vatican.',
+'Vatican, 11.2025', 
+'The article presents a relation from a trip to Vatican in November 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/C3nLjREapEUDGyoLA');
+insert into ARTICLE_TAG (tag_id, article_id) values (73,285);
