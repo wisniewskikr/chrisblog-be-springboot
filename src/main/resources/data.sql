@@ -3566,3 +3566,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/UU5R8pPnuBAUWDrH8');
 insert into ARTICLE_TAG (tag_id, article_id) values (41,286);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+287,
+'The article presents a relation from a trip to Pompeii and Herkulanum in Italy.',
+'Pompeii and Herkulanum, Italy, 11.2025', 
+'The article presents a relation from a trip to Pompeii and Herkulanum in Italy in November 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/RtPQRUXdsgX5pFac8');
+insert into ARTICLE_TAG (tag_id, article_id) values (41,287);
