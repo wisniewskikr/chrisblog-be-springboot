@@ -3486,10 +3486,22 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 280,
 'The article presents a relation from a trip to Bialystok in Poland.',
 'Bialystok, Poland, 03.2025', 
-'The article presents a relation from a trip to Lukecin in Bialystok in March 2025.', 
+'The article presents a relation from a trip to Bialystok in Poland in March 2025.', 
 '2025-12-06', 
 'Chris', 
 4,
 'LINK_ALBUM',
 'https://photos.app.goo.gl/U4kGAfRYnkud733R6');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,280);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+281,
+'The article presents a relation from a trip to Bialowieza in Poland.',
+'Bialowieza, Poland, 03.2025', 
+'The article presents a relation from a trip to Bialowieza in Poland in March 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/6GCnourPAvxJY31Q8');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,281);
