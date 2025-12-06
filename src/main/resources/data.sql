@@ -3582,8 +3582,8 @@ insert into ARTICLE_TAG (tag_id, article_id) values (41,287);
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 288,
 'The article presents a relation from a trip to Vesuvius in Italy.',
-'Vesuvius, Italy, 11.2025', 
-'The article presents a relation from a trip to Vesuvius in Italy in November 2025.', 
+'Vesuvius, Italy, 12.2025', 
+'The article presents a relation from a trip to Vesuvius in Italy in December 2025.', 
 '2025-12-06', 
 'Chris', 
 4,
@@ -3594,11 +3594,23 @@ insert into ARTICLE_TAG (tag_id, article_id) values (41,288);
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 289,
 'The article presents a relation from a trip to Capri in Italy.',
-'Capri, Italy, 11.2025', 
-'The article presents a relation from a trip to Capri in Italy in November 2025.', 
+'Capri, Italy, 12.2025', 
+'The article presents a relation from a trip to Capri in Italy in December 2025.', 
 '2025-12-06', 
 'Chris', 
 4,
 'LINK_ALBUM',
 'https://photos.app.goo.gl/iVG9DWjgPyAnQ68K8');
 insert into ARTICLE_TAG (tag_id, article_id) values (41,289);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+290,
+'The article presents a relation from a trip to Amalfi Coast in Italy.',
+'Amalfi Coast, Italy, 12.2025', 
+'The article presents a relation from a trip to Amalfi Coast in Italy in December 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/NehDMVT92jccUYDA8');
+insert into ARTICLE_TAG (tag_id, article_id) values (41,290);
