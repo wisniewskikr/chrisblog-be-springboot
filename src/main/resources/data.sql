@@ -3521,7 +3521,7 @@ insert into ARTICLE_TAG (tag_id, article_id) values (32,282);
 insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
 283,
 'The article presents a relation from a trip to Vienna in Austria.',
-'Vienna, Poland, 11.2025', 
+'Vienna, Austria, 11.2025', 
 'The article presents a relation from a trip to Vienna in Austria in November 2025.', 
 '2025-12-06', 
 'Chris', 
@@ -3529,3 +3529,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/8LvR5wUEmhFAzEmq8');
 insert into ARTICLE_TAG (tag_id, article_id) values (30,283);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+284,
+'The article presents a relation from a trip to Venice in Italy.',
+'Venice, Italy, 11.2025', 
+'The article presents a relation from a trip to Venice in Italy in November 2025.', 
+'2025-12-06', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/qMGjF6jUq9aYq8oS6');
+insert into ARTICLE_TAG (tag_id, article_id) values (41,284);
