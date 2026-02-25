@@ -3734,3 +3734,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/tFXcwDYgy1e3BWP16');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,300);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+301,
+'The article presents a relation from a trip to Ketrzyn & Wilczy Szaniec in Poland.',
+'Ketrzyn & Wilczy Szaniec, Poland, 11.2024', 
+'The article presents a relation from a trip to Ketrzyn & Wilczy Szaniec in Poland in November 2024.', 
+'2026-02-25', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/gMqayQDzffQBhB5WA');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,301);
