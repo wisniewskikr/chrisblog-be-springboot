@@ -3770,3 +3770,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/jgT75EZs5oHbh4386');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,303);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+304,
+'The article presents a relation from a trip to Tomaszow Mazwiecki in Poland.',
+'Tomaszow Mazowiecki, Poland, 08.2025', 
+'The article presents a relation from a trip to Tomaszow Mazowiecki in Poland in August 2025.', 
+'2026-03-03', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/AfaobbBXdZGzrtqF9');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,304);
