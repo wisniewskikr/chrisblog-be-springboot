@@ -3830,3 +3830,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/mayGSrh2DPkm8cJG9');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,308);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+309,
+'The article presents a relation from a trip to Szczecinek & Borne Sulinowo in Poland.',
+'Szczecinek & Borne Sulinowo, Poland, 09.2025', 
+'The article presents a relation from a trip to Szczecinek & Borne Sulinowo in Poland in September 2025.', 
+'2026-03-04', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/jHsihEdQjj5fEhJb8');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,309);
