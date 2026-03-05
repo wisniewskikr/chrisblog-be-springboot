@@ -3842,3 +3842,15 @@ insert into ARTICLE (id, page_description, title, description, date, author, cat
 'LINK_ALBUM',
 'https://photos.app.goo.gl/jHsihEdQjj5fEhJb8');
 insert into ARTICLE_TAG (tag_id, article_id) values (32,309);
+
+insert into ARTICLE (id, page_description, title, description, date, author, category_id, template, url) values (
+310,
+'The article presents a relation from a trip to Wieliczka in Poland.',
+'Wieliczka, Poland, 09.2025', 
+'The article presents a relation from a trip to Wieliczka in Poland in September 2025.', 
+'2026-03-05', 
+'Chris', 
+4,
+'LINK_ALBUM',
+'https://photos.app.goo.gl/rPkjkcyN24u5K8v98');
+insert into ARTICLE_TAG (tag_id, article_id) values (32,310);
